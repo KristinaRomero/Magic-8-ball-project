@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2E0059, #4B0082);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Magic 8-Ball Styles */
+  .magic-8-ball {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
+    margin: 0 auto;
+  }
+  
+  .magic-8-ball:before {
+    content: "8";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Triangle for the Answer */
+  .triangle {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #0000ff;
+    text-align: center;
+  }
+  
+  .triangle p {
+    color: white;
+    margin: -50px 0 0 0;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .triangle p.show {
+    opacity: 1;
+  }
+  
+  /* Input Section */
+  .input-section {
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4B0082;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4B0082;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6A0DAD;
+  }
+  
+  /* Shake Animation */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shaking {
+    animation: shake 0.5s ease-in-out;
+  }
+  
