@@ -30,13 +30,7 @@ document.getElementById('shake-button').addEventListener('click', function () {
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
     const randomAnswer = answers[randomCategory][Math.floor(Math.random() * answers[randomCategory].length)];
   
-    // Update the answer text and make it visible
+    // Update the answer text and make it visible inside the triangle
     answerElement.textContent = randomAnswer;
-    answerElement.classList.add('show');
-  
-    // Remove visibility after 1 second (optional)
-    setTimeout(() => {
-      answerElement.classList.remove('show');
-    }, 1000);
   });
   

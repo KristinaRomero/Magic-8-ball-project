@@ -18,11 +18,11 @@ body {
   /* Magic 8-Ball Styles */
   .magic-8-ball {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 1400px; /* 7x larger than the original 200px */
+    height: 1400px;
     background: black;
     border-radius: 50%;
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 40px #000;
     margin: 0 auto;
   }
   
@@ -32,13 +32,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
+    width: 490px; /* Adjusted for the larger size */
+    height: 490px;
     background: white;
     border-radius: 50%;
     text-align: center;
-    line-height: 70px;
-    font-size: 30px;
+    line-height: 490px;
+    font-size: 140px;
     font-weight: bold;
     color: black;
   }
@@ -46,27 +46,25 @@ body {
   /* Triangle for the Answer */
   .triangle {
     position: absolute;
-    bottom: 30%;
+    bottom: 22%; /* Position adjusted for the larger ball */
     left: 50%;
     transform: translate(-50%, 50%);
     width: 0;
     height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 70px solid #0000ff;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 240px solid #0000ff; /* Triangle color */
     text-align: center;
   }
   
   .triangle p {
     color: white;
-    margin: -50px 0 0 0;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .triangle p.show {
-    opacity: 1;
+    margin: -170px 0 0 0; /* Adjust position inside triangle */
+    font-size: 28px; /* Larger font for visibility */
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 200px;
+    transform: translateY(-20%);
   }
   
   /* Input Section */
