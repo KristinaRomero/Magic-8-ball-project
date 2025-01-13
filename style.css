@@ -18,7 +18,7 @@ body {
   /* Magic 8-Ball Styles */
   .magic-8-ball {
     position: relative;
-    width: 700px; /* 7x larger than the original 200px */
+    width: 700px; /* Adjust 8-ball size to 700px for better display*/
     height: 700px;
     background: black;
     border-radius: 50%;
@@ -46,25 +46,29 @@ body {
   /* Triangle for the Answer */
   .triangle {
     position: absolute;
-    bottom: 22%; /* Position adjusted for the larger ball */
+    bottom: 22%; /* Position adjusted for the triangle */
     left: 50%;
     transform: translate(-50%, 50%);
     width: 0;
     height: 0;
-    border-left: 140px solid transparent;
-    border-right: 140px solid transparent;
-    border-bottom: 240px solid #0000ff; /* Triangle color */
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid #0000ff; /* Triangle color */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
   
   .triangle p {
     color: white;
-    margin: -170px 0 0 0; /* Adjust position inside triangle */
-    font-size: 28px; /* Larger font for visibility */
+    font-size: 16px;
     text-align: center;
+    margin: 0;
     word-wrap: break-word;
-    max-width: 200px;
-    transform: translateY(-20%);
+    max-width: 120px; /* Ensure it fits within the triangle */
+    transform: translateY(-10%); /* Adjust positioning within the triangle */
   }
   
   /* Input Section */
