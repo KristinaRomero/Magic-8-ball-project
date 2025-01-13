@@ -18,8 +18,8 @@ body {
   /* Magic 8-Ball Styles */
   .magic-8-ball {
     position: relative;
-    width: 1400px; /* 7x larger than the original 200px */
-    height: 1400px;
+    width: 700px; /* 7x larger than the original 200px */
+    height: 700px;
     background: black;
     border-radius: 50%;
     box-shadow: 0 0 40px #000;
