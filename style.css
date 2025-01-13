@@ -44,9 +44,9 @@ body {
   }
   
   /* Triangle for the Answer */
-  .triangle {
+.triangle {
     position: absolute;
-    bottom: 22%; /* Position adjusted for the triangle */
+    bottom: 20%; /* Adjust the position for better alignment */
     left: 50%;
     transform: translate(-50%, 50%);
     width: 0;
@@ -54,22 +54,25 @@ body {
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
     border-bottom: 120px solid #0000ff; /* Triangle color */
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     overflow: hidden;
   }
   
   .triangle p {
+    position: absolute;
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Adjust font size for better fit */
     text-align: center;
     margin: 0;
     word-wrap: break-word;
-    max-width: 120px; /* Ensure it fits within the triangle */
-    transform: translateY(-10%); /* Adjust positioning within the triangle */
+    max-width: 100px; /* Keep the text inside the triangle */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    transform: translateY(-30%); /* Fine-tune position within the triangle */
   }
+  
   
   /* Input Section */
   .input-section {
