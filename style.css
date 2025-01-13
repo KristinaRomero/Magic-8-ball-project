@@ -65,14 +65,15 @@ body {
   .triangle p {
     position: absolute;
     color: white;
-    font-size: 14px; /* Adjust font size for better fit */
+    font-size: 12px; /* Reduced font size */
     text-align: center;
     margin: 0;
     word-wrap: break-word;
-    max-width: 100px; /* Keep the text inside the triangle */
-    line-height: 1.2; /* Adjust line height for better spacing */
-    transform: translateY(-30%); /* Fine-tune position within the triangle */
+    max-width: 80px; /* Adjusted to fit better in the triangle */
+    line-height: 1.1; /* Tighter line spacing */
+    transform: translateY(-25%); /* Fine-tuned positioning */
   }
+  
   
   
   /* Input Section */
