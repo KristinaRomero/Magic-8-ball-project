@@ -66,17 +66,18 @@ body {
   .triangle p {
     position: absolute;
     color: white;
-    font-size: 12px; /* Smaller font for better fit */
+    font-size: 14px; /* Increase font size slightly for better fit */
+    font-weight: 700;
     text-align: center;
     margin: 0;
     word-wrap: break-word;
-    max-width: 80px; /* Keep text within triangle */
-    line-height: 1.1; /* Adjust spacing */
-    transform: translateY(-25%); /* Align text */
+    max-width: 90%; /*Allow more space in traingle*/
+    line-height: 1.2; /* Adjust spacing */
     z-index: 2; /* Ensure text is in front of the triangle */
+    top: 20%;
+    left: 50%; 
+    transform: translate(-50%, 0); /* center horizontally */
   }
-  
-  
   
   
   /* Input Section */
