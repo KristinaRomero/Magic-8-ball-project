@@ -60,20 +60,22 @@ body {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    z-index: 1; /* Ensure the triangle stays behind the text */
   }
-  
   
   .triangle p {
     position: absolute;
     color: white;
-    font-size: 12px; /* Reduced font size */
+    font-size: 12px; /* Smaller font for better fit */
     text-align: center;
     margin: 0;
     word-wrap: break-word;
-    max-width: 80px; /* Adjusted to fit better in the triangle */
-    line-height: 1.1; /* Tighter line spacing */
-    transform: translateY(-25%); /* Fine-tuned positioning */
+    max-width: 80px; /* Keep text within triangle */
+    line-height: 1.1; /* Adjust spacing */
+    transform: translateY(-25%); /* Align text */
+    z-index: 2; /* Ensure text is in front of the triangle */
   }
+  
   
   
   
