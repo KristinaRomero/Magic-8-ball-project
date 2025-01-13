@@ -32,16 +32,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 490px; /* Adjusted for the larger size */
-    height: 490px;
+    width: 200px; /* Smaller white circle */
+    height: 200px;
     background: white;
     border-radius: 50%;
     text-align: center;
-    line-height: 490px;
-    font-size: 140px;
+    line-height: 200px; /* Match the height for centering the number */
+    font-size: 70px; /* Smaller number 8 */
     font-weight: bold;
     color: black;
   }
+  
   
   /* Triangle for the Answer */
 .triangle {
