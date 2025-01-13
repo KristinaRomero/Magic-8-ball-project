@@ -2,6 +2,10 @@ document.getElementById('shake-button').addEventListener('click', function () {
     const magicBall = document.querySelector('.magic-8-ball');
     const answerElement = document.getElementById('answer');
   
+    // Debug: Check if the elements exist
+    console.log("Magic Ball Element:", magicBall);
+    console.log("Answer Element:", answerElement);
+  
     // Add the shaking animation class
     magicBall.classList.add('shaking');
   
@@ -30,7 +34,14 @@ document.getElementById('shake-button').addEventListener('click', function () {
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
     const randomAnswer = answers[randomCategory][Math.floor(Math.random() * answers[randomCategory].length)];
   
+    // Debug: Log the random answer
+    console.log("Generated Answer:", randomAnswer);
+  
     // Update the answer text and make it visible inside the triangle
-    answerElement.textContent = randomAnswer;
+    if (answerElement) {
+      answerElement.textContent = randomAnswer;
+    } else {
+      console.error("Answer element not found!");
+    }
   });
   
